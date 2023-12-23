@@ -33,20 +33,20 @@ window.addEventListener("click", function (e) {
 // darkmode toggle
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
-const symboldark = document.querySelector("#darklogos");
 
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     html.classList.add("dark");
-    symboldark.classList.add("darklogos1");
+    localStorage.theme = "dark";
   } else {
     html.classList.remove("dark");
-    symboldark.classList.remove("darklogos1");
+    localStorage.theme = "light";
   }
 });
 
-// darksymbol
-// const symboldark =document.querySelector('#darklogos')
-// symboldark.addEventListener('click', function(){
-//   symboldark.classList.toggle('darklogos')
-// })
+// posisi toggle sesuai mode
+if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  darkToggle.checked = true;
+} else {
+  darkToggle.checked = false;
+}
