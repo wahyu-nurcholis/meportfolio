@@ -33,11 +33,20 @@ window.addEventListener("click", function (e) {
 // darkmode toggle
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
+const symboldark = document.querySelector("#darklogos");
 
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     html.classList.add("dark");
+    symboldark.classList.add("darklogos1");
   } else {
     html.classList.remove("dark");
+    symboldark.classList.remove("darklogos1");
   }
 });
+
+// darksymbol
+// const symboldark =document.querySelector('#darklogos')
+// symboldark.addEventListener('click', function(){
+//   symboldark.classList.toggle('darklogos')
+// })
