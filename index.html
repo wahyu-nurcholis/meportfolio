@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio ku</title>
     <link href="dist/final.css" rel="stylesheet" />
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
@@ -76,7 +77,7 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl capitalize">hallo semua 👋🏻, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">WAHYU NURCHOLIS</span></h1>
+            <h1 class="text-base font-semibold text-primary md:text-xl capitalize">Hello everyone 👋🏻, My <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">WAHYU NURCHOLIS</span></h1>
             <h2 class="font-medium text-slate-500 text-lg mb-3 lg:text-2xl capitalize">
               <span class="text-dark dark:text-slate-300">Junior Develover</span> | <span class="dark:hover:text-white">Creator</span> | <span class="dark:hover:text-white">mecanic</span>
             </h2>
@@ -202,18 +203,38 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg">Tentang saya</h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white capitalize">Yuk, mari belajar coding dari <span class="text-red-600 font-bold animate-pulse">NOL!</span> bersama saya</h2>
-            <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus reprehenderit deleniti quo sint distinctio adipisci veritatis expedita reiciendis soluta.
-            </p>
+            <h4 class="font-bold uppercase text-primary text-lg pb-5">Tentang saya</h4>
+            <ul class="dark:text-slate-400">
+              <li>
+                <lord-icon src="https://cdn.lordicon.com/tdtlrbly.json" trigger="loop" delay="1500" stroke="bold" style="width: 25px; height: 25px"></lord-icon
+                ><a href="https://maps.app.goo.gl/McnX2RvkweEvbGfU8" target="_blank" class="pl-2 font-semibold">Tangerang, Indonesia.</a>
+              </li>
+              <li>
+                <lord-icon src="https://cdn.lordicon.com/ebjjjrhp.json" trigger="loop" delay="1500" stroke="bold" state="in-reveal" colors="primary:#121331,secondary:#3080e8" style="width: 20px; height: 20px"></lord-icon
+                ><a href="mailto: why.nurcholis@gmail.com" target="_blank" class="italic pl-3">why.nurcholis@gmail.com</a>
+              </li>
+              <li class="text-[#25D366] flex pt-2">
+                <svg role="img" class="fill-current animate-pulse" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 17px; height: 20px">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  /></svg
+                ><span class="text-black pl-3 dark:text-slate-400"><a href="wa.me//085777109991">+62 857-7710-9991</a></span>
+              </li>
+              <li class="flex pt-2">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 17px; height: 20px">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  /></svg
+                ><a href="https://github.com/wahyu-nurcholis" target="_blank" class="pl-3">wahyu-nurcholis</a>
+              </li>
+            </ul>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3 class="font-semibold text-dark text-2xl mb-4 capitalize lg:text-3xl lg:pt-10 dark:text-white">untuk lebih lanjut follow me</h3>
             <p class="font-medium text-base text-slate-500 max-w-xl mb-6 lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, mollitia cupiditate tempore architecto aut nulla!</p>
             <div class="flex items-center">
               <!-- youtube -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-red-500">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-red-500 border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
                   <path
@@ -222,7 +243,7 @@
                 </svg>
               </a>
               <!-- instagram -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-red-500">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-red-300 border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -231,7 +252,7 @@
                 </svg>
               </a>
               <!-- twitter -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-[#1D9BF0]">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-[#1D9BF0] border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Twitter</title>
                   <path
@@ -240,7 +261,7 @@
                 </svg>
               </a>
               <!-- tiktok -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-[#000000]">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-900 border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>TikTok</title>
                   <path
@@ -249,7 +270,7 @@
                 </svg>
               </a>
               <!-- linkedln -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-[#0A66C2]">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-[#0A66C2] border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
                   <path
@@ -258,7 +279,7 @@
                 </svg>
               </a>
               <!-- facebook -->
-              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-300 hover:border-primary hover:text-[#0866FF]">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-[#0866FF] border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
                   <path
@@ -284,42 +305,42 @@
           </div>
         </div>
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot (36).png" alt="landing page" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white capitalize">landing page pace creator</h3>
             <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias eligendi nostrum ducimus cum commodi.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot (43).png" alt="E-commerce" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white capitalize">E-commerce</h3>
             <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias eligendi nostrum ducimus cum commodi.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot 2023-10-29 204234.png" alt="technical" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white capitalize">technical</h3>
             <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias eligendi nostrum ducimus cum commodi.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot 2023-10-29 204315.png" alt="tribut pace" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white capitalize">tribut pace</h3>
             <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias eligendi nostrum ducimus cum commodi.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot 2023-10-29 204455.png" alt="eshoping" width="w-full" />
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white capitalize">eshoping</h3>
             <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias eligendi nostrum ducimus cum commodi.</p>
           </div>
-          <div class="mb-12 p-4 md:w-1/3 hover:scale-110 duration-300 ease-in-out cursor-pointer">
+          <div class="mb-12 p-4 md:w-1/3 sm:w-1/2 hover:scale-110 duration-300 ease-in-out cursor-pointer">
             <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/portfolio/Screenshot 2023-12-17 215408.png" alt="converter reader" width="w-full" />
             </div>
@@ -488,17 +509,19 @@
     <footer class="bg-slate-900 pt-16 pb-5">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-3 text-slate-300 font-medium md:w-1/3">
-            <img src="dist/img/subuh-removebg-preview.png" width="200px" alt="logow" />
-            <h2 class="font-bold text-3xl text-white mb-5">WAHYU OFFICE</h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi kami</h3>
-            <p>why.nurcholis@gmail.com</p>
-            <p>jl. swadaya no.1 kelurahan pasir jaya</p>
-            <p>Tangerang</p>
+          <div class="w-full px-4 mb-3 text-slate-300 font-normal md:w-1/3">
+            <img src="dist/img/subuh-removebg-preview.png" width="150px" alt="logow" />
+            <h2 class="font-bold text-2xl text-white mb-5">WAHYU OFFICE</h2>
+            <h3 class="font-bold text-xl mb-2">Hubungi kami</h3>
+            <a href="mailto: why.nurcholis@gmail.com" target="_blank" class="italic font-semibold" trigger="hover"
+              ><lord-icon src="https://cdn.lordicon.com/nzixoeyk.json" class="group pr-1 pt-1" trigger="loop" delay="1500" colors="primary:#b4b4b4" style="width: 20px; height: 20px"></lord-icon> why.nurcholis@gmail.com</a
+            >
+            <p class="text-sm capitalize">jl. swadaya no.1 kelurahan pasir jaya</p>
+            <p class="text-sm">Tangerang</p>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
+          <div class="w-full px-4 mb-10 md:w-1/3 uppercase">
             <h3 class="font-semibold text-xl text-white mb-5">kategori tulisan</h3>
-            <ul class="text-slate-300 capitalize">
+            <ul class="text-slate-300 capitalize text-sm">
               <li>
                 <a href="#" class="inline-block text-base hover:text-primary mb-3">programming</a>
               </li>
@@ -510,9 +533,9 @@
               </li>
             </ul>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">tautan</h3>
-            <ul class="text-slate-300 capitalize">
+          <div class="w-full px-4 mb-12 md:w-1/3 uppercase">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300 capitalize text-sm">
               <li>
                 <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
               </li>
@@ -604,6 +627,14 @@
       ><span class="block h-5 w-5 border-t-2 border-l-2 mt-2 rotate-45"></span
     ></a>
     <!-- back to top end -->
+
+    <section class="px-10 flex">
+      <div class="container">
+        <div class="flex justify-center items-center h-screen">
+          <img src="dist/img/404 Error Page not Found with people connecting a plug-cuate.png" alt="404page" class="max-w-full max-h-full" />
+        </div>
+      </div>
+    </section>
 
     <script src="dist/js/script.js"></script>
   </body>
