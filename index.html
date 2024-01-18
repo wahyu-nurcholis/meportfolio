@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio ku</title>
+    <title>WAHYU NURCHOLIS</title>
     <link href="dist/final.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS end -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -16,13 +19,13 @@
   </head>
   <body>
     <!-- header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="navbar bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-transparent">
       <div class="container">
         <div class="flex items-center justify-between relative">
-          <div class="px-2">
-            <img src="dist/img/subuh-removebg-preview.png" width="100" class="block py-4" alt="logo" />
+          <div class="navbar px-4">
+            <a href="#home" class="font-bold text-base text-primary block py-6">WAHYU DEV</a>
           </div>
-          <div class="flex items-center px-4">
+          <div class="flex items-center px-8">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
               <span class="hamburger-menu duration-300 ease-in-out origin-top-left"></span>
               <span class="hamburger-menu duration-300 ease-in-out"></span>
@@ -30,7 +33,7 @@
             </button>
             <nav
               id="nav-menu"
-              class="hidden absolute py-3 bg-white shadow-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none sm:blur-none lg:rounded-none dark:bg-dark dark:shadow-slate-500"
+              class="hidden absolute py-3 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none sm:blur-none lg:rounded-none dark:shadow-slate-700"
             >
               <ul class="block capitalize lg:flex dark:text-white">
                 <li class="group">
@@ -79,19 +82,18 @@
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl capitalize">
               Hello everyone <lord-icon src="https://cdn.lordicon.com/rnvjhobj.json" class="pt-2" trigger="loop" delay="1000" style="width: 50px; height: 50px"></lord-icon>, My
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">WAHYU NURCHOLIS</span>
+              <span class="name block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">WAHYU NURCHOLIS</span>
             </h1>
             <h2 class="font-medium text-slate-500 text-lg mb-3 lg:text-2xl capitalize">
-              <span class="text-dark dark:text-slate-300">Junior Develover<lord-icon src="https://cdn.lordicon.com/eodeknny.json" trigger="hover" delay="1500" state="in-code" style="width: 40px" class="pr-1 pt-2"> </lord-icon></span>
-              | <span class="dark:hover:text-white">Creator</span> | <span class="dark:hover:text-white">mecanic</span>
+              <p class="lead text-dark dark:text-slate-300">Junior Develover | Creator | Mecanic</p>
             </h2>
-            <p class="font-medium text-slate-400 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, optio autem? Temporibus, delectus? Officia, <span class="text-dark font-bold dark:text-white">Doloribus !</span>
+            <p class="details font-medium text-slate-400 mb-6 leading-relaxed">
+              <!-- <span class="text-dark font-bold dark:text-white">Doloribus !</span> -->
             </p>
             <!-- sklis star -->
             <section id="skils">
-              <h2 class="font-semibold text-slate-500 capitalize">skills learned</h2>
-              <div class="flex items-center">
+              <h2 class="skill font-semibold text-slate-500 capitalize">skills learned</h2>
+              <div class="skill flex items-center">
                 <a href="#" class="w-9 h-9 mr-3 flex justify-center items-center text-[#E34F26] transition-all duration-300 ease-in-out hover:scale-110">
                   <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>HTML5</title>
@@ -157,8 +159,8 @@
                   </svg>
                 </a>
               </div>
-              <h2 class="mt-2 font-semibold text-slate-500 capitalize">Version Control</h2>
-              <div class="flex items-center mb-8">
+              <h2 class="version mt-2 font-semibold text-slate-500 capitalize">Version Control</h2>
+              <div class="version flex items-center mb-8">
                 <a href="#" class="w-9 h-9 mr-3 flex justify-center items-center text-[#F05032] transition-all duration-300 ease-in-out hover:scale-110">
                   <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Git</title>
@@ -180,12 +182,14 @@
             <!-- skil end -->
 
             <!-- bottom -->
-            <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"><span class="animate-pulse">Contact me</span></a>
+            <button class="tombol-contact">
+              <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 hover:scale-125">Contact me</a>
+            </button>
             <!-- end bottom -->
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:mt-0 lg:right-0">
-              <img src="dist/img/wahyu2.png" width="350" alt="WAHYU" class="relative z-10 max-w-full mx-auto" />
+              <img src="dist/img/wahyu2.png" width="350" alt="WAHYU" class="img-thubnail relative z-10 max-w-full mx-auto" />
               <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-100 sm:scale-95">
                 <svg width="450" height="450" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -204,11 +208,11 @@
 
     <!-- abaout section start -->
     <section id="about" class="pt-28 pb-28 dark:bg-dark">
-      <div class="container">
+      <div class="container" data-aos-offset="400">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-primary text-lg pb-5">about me</h4>
-            <ul class="dark:text-slate-400">
+            <h4 class="font-bold uppercase text-primary text-lg pb-5" data-aos="fade-up">about me</h4>
+            <ul class="dark:text-slate-400" data-aos="fade-up" data-aos-duration="1000">
               <li>
                 <lord-icon src="https://cdn.lordicon.com/tdtlrbly.json" trigger="loop" delay="2000" stroke="bold" style="width: 25px; height: 25px"></lord-icon
                 ><a href="https://maps.app.goo.gl/McnX2RvkweEvbGfU8" target="_blank" class="pl-2 font-semibold">Tangerang, Indonesia.</a>
@@ -231,11 +235,11 @@
             </ul>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 capitalize lg:text-3xl lg:pt-10 dark:text-white">
-              for more follow me<lord-icon src="https://cdn.lordicon.com/whtfgdfm.json" class="pt-4 pl-6" trigger="loop" delay="1000" state="hover-ternd-flat-4" colors="primary:#14b8a6" style="width: 50px; height: 50px"> </lord-icon>
-            </h3>
-            <p class="font-medium text-base text-slate-500 max-w-xl mb-6 lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, mollitia cupiditate tempore architecto aut nulla!</p>
-            <div class="flex items-center">
+            <h3 class="font-semibold text-dark text-2xl mb-4 capitalize lg:text-3xl lg:pt-10 dark:text-white" data-aos="fade-left" data-aos-delay="600">for more follow me</h3>
+            <p class="font-medium text-base text-slate-500 max-w-xl mb-6 lg:text-lg" data-aos="flip-up" data-aos-delay="750">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, mollitia cupiditate tempore architecto aut nulla!
+            </p>
+            <div class="flex items-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
               <!-- youtube -->
               <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-red-500 border-slate-300 hover:border-primary">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -302,9 +306,11 @@
       <div class="container">
         <div class="w-full px-5">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white capitalize">My Latest Project</h2>
-            <p class="font-medium text-sm text-slate-500 md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod, quos corporis doloribus consectetur magni vitae!</p>
+            <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-down">Portfolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white capitalize" data-aos="fade-up" data-aos-delay="100">My Latest Project</h2>
+            <p class="font-medium text-sm text-slate-500 md:text-lg" data-aos="fade-up" data-aos-anchor-placement="top-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod, quos corporis doloribus consectetur magni vitae!
+            </p>
           </div>
         </div>
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
@@ -360,9 +366,11 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">cilents</h4>
-            <h2 class="font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 dark:text-slate-800 capitalize">yang pernah berkerjasama</h2>
-            <p class="font-medium text-sm text-slate-500 dark:text-slate-200 md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod.</p>
+            <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-down">cilents</h4>
+            <h2 class="font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 dark:text-slate-800 capitalize" data-aos="fade-left" data-aos-delay="150">yang pernah berkerjasama</h2>
+            <p class="font-medium text-sm text-slate-500 dark:text-slate-200 md:text-lg" data-aos="fade-up" data-aos-anchor-placement="top-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod.
+            </p>
           </div>
         </div>
 
@@ -403,9 +411,9 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">blog</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white capitalize">tulisan terkini</h2>
-            <p class="font-medium text-sm text-slate-500 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi incidunt voluptate animi sunt!</p>
+            <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-down">blog</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white capitalize" data-aos="zoom-in" data-aos-delay="100">tulisan terkini</h2>
+            <p class="font-medium text-sm text-slate-500 md:text-lg" data-aos="fade-up" data-aos-anchor-placement="top-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi incidunt voluptate animi sunt!</p>
           </div>
         </div>
         <div class="flex flex-wrap justify-center">
@@ -479,24 +487,26 @@
       <div class="container">
         <div class="w-full px-5">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2 class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl capitalize">hubungi kami</h2>
-            <p class="font-medium text-sm text-slate-500 md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod, quos corporis doloribus consectetur magni vitae!</p>
+            <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-up">Contact</h4>
+            <h2 class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl capitalize" data-aos="zoom-out">hubungi kami</h2>
+            <p class="font-medium text-sm text-slate-500 md:text-lg" data-aos="fade-up" data-aos-anchor-placement="top-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde omnis animi ut consequatur quod, quos corporis doloribus consectetur magni vitae!
+            </p>
           </div>
         </div>
 
         <form action="">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base font-bold text-primary">Nama</label>
+              <label for="name" class="text-base font-bold text-primary" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">Nama</label>
               <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base font-bold text-primary">email</label>
+              <label for="email" class="text-base font-bold text-primary" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">email</label>
               <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base font-bold text-primary">Pesan</label>
+              <label for="message" class="text-base font-bold text-primary" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2500">Pesan</label>
               <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
             </div>
             <div class="w-full px-4">
@@ -641,5 +651,22 @@
     </section>
 
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from(".name", { duration: 1, x: "-50%", opacity: 0, ease: "back.out(2)" });
+      gsap.from(".lead", { duration: 0.5, y: "-50%", delay: 1, opacity: 0 });
+      gsap.from(".skill", { duration: 0.5, y: "-50%", delay: 1.2, opacity: 0 });
+      gsap.from(".version", { duration: 0.5, y: "-50%", delay: 1.5, opacity: 0 });
+      gsap.from(".tombol-contact", { duration: 0.5, y: "-100%", delay: 1.8, opacity: 0 });
+      <!-- gsap.to(".details", { duration: 2, delay: 1, text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, optio autem? Temporibus, delectus? Officia," }); -->
+      gsap.from(".img-thubnail", { duration: 1, y: -100, opacity: 0 });
+      gsap.from(".navbar", { duration: 1, y: "-100%", opacity: 0 });
+    </script>
   </body>
 </html>
